@@ -31,6 +31,7 @@ main {
     color: darkblue;
     font-size: 20px;
     font-weight: 700;
+    font-family: Arial, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
