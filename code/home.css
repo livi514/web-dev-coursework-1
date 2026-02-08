@@ -24,6 +24,7 @@
 .right-column {
     flex: 1; /* takes up the other half */
     text-align: center;
+    overflow: hidden;
 }
 
 .left-column, .right-column {
