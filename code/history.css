@@ -1,0 +1,96 @@
+.page-wrapper {
+  max-width: 900px;   /* controls how wide your content can get */
+  margin: 0 auto;     /* centres the whole column */
+  padding: 20px;      /* space around everything */
+}
+
+/* Hover effect for event-card */
+
+.event-card {
+  border: 2px solid transparent;
+  padding: 20px;
+  margin-bottom: 40px; 
+  transition: box-shadow 0.3s, border-color 0.3s;
+  border-radius: 8px;
+}
+
+.event-card:hover {
+  border-color: darkblue; 
+  box-shadow:
+    0 0 0 3px rgba(11, 61, 145, 0.35), /* soft outer glow */
+    0 10px 24px rgba(0, 0, 0, 0.18);   /* depth shadow */
+}
+
+
+/* Setting the size for each image */
+
+.event-card-image {
+  width: 300px;
+}
+
+
+img {
+  margin: 5px;
+}
+
+/* Padding for each image in the gallery */
+
+.gallery {
+  padding: 20px;        /* space around the image */
+  border-radius: 8px;
+}
+
+/* Sizing for photo gallery */
+.gallery img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Making a grid for the photo gallery */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* spacing between images */
+}
+
+.gallery p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Styling text */
+.event-card h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.event-card p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.gallery p {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Not required, but styling for consistency */
+h1 {
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Scaling images on hover */
+.gallery img:hover {
+  transform: scale(1.2);
+}

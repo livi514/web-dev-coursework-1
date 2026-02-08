@@ -1,0 +1,59 @@
+.hero-image {
+    /* The size of the hero image should adjust to fit the whole width of the user's screen, 
+    no matter how big the user's screen is */
+  width: 100%;
+  /* height: auto; calculates he height automatically based on 
+  the element's width and its natural aspect ratio */
+  height: auto;
+  display: block;
+  /* adding some space between the heading and the section */
+  margin-bottom: 20px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* space between columns */
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1; /* takes up half the space */
+}
+
+.right-column {
+    flex: 1; /* takes up the other half */
+    text-align: center;
+}
+
+.left-column, .right-column {
+  padding: 10px;
+}
+
+.column-image {
+    width: 100%;
+    height: auto;
+}
+
+.two-columns h2 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: darkblue;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.two-columns p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: gray;
+  line-height: 1.6;
+}
+
+.image-title a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: darkblue;
+  text-decoration: underline;
+}
