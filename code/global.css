@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* Nabvar */
 nav {
     position: sticky;
     top: 0;
@@ -19,14 +19,14 @@ nav ul {
   justify-content: space-between;
 }
 
-/* LOGO */
+/* Logo */
 nav .logo img {
   height: 40px;
   width: auto;
   padding: 8px 16px;
 }
 
-/* NAV ITEMS */
+/* Nav items */
 nav .nav-item {
   margin-left: 20px;
 }
@@ -40,4 +40,19 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #111;
+}
+
+/* Footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
