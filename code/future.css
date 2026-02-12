@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* Set a background color */
+/* Set a background colour and base font */
 body {
   background-color:#FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,14 +42,14 @@ main {
     font-family: Arial, sans-serif;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* Timeline container */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* Vertical line for the timeline */
 .timeline::after {
   content: '';
   position: absolute;
@@ -61,7 +61,7 @@ main {
   margin-left: -3px;
 }
 
-/* Container around content */
+/* Timeline entry/event container */
 .container {
   padding: 10px 40px;
   position: relative;
@@ -126,7 +126,7 @@ main {
   left: -16px;
 }
 
-/* The actual content */
+/* Content box */
 .content {
   padding: 20px 30px;
   background-color: lightgray;
@@ -134,20 +134,19 @@ main {
   border-radius: 10px;
   border: 3px solid darkblue;
   overflow: hidden;
+}
 
-  /* Making the images circular by adding rounded corners */
-  img {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    padding: 20px;
-  }
+/* Making the images on the timeline circular by adding rounded corners */
+.content img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  padding: 20px;
+}
 
-  img:hover {
+.content img:hover {
     transform: scale(1.2);
-  }
-
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
