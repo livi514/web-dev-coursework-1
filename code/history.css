@@ -28,8 +28,7 @@
   width: 300px;
 }
 
-
-img {
+.event-card img, .gallery img {
   margin: 5px;
 }
 
@@ -50,7 +49,7 @@ img {
 }
 
 /* Making a grid for the photo gallery */
-.container {
+.history-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px; /* spacing between images */
