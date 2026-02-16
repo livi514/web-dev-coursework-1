@@ -13,7 +13,7 @@ The pages can be navigated using the navigation bar at the top of the screen.
 This ZIP file contains all source code and assets for my website, including:
 - HTML files
 - CSS files
-- Images and other assets
+- Images
 - This README file
 
 The website has been deployed on my assigned Azure Lab VM as required.
